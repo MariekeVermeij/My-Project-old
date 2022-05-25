@@ -1,11 +1,48 @@
-name: Print Hello
+  GNU nano 5.9                                                                                                                     Checkout.yml                                                                                                                      Modified
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+name: Checkout Example
 
 on: workflow_dispatch
 jobs:
-  print-hello:
-    # Specify on which operating system we want this workflow to run
+  checkout-repository:
     runs-on: ubuntu-20.04
-    # The steps that will be excuted
     steps:
-    - name: Print
-      run: echo "Hello, world!"
+      - name: Checkout repository
+        uses: actions/checkout@v2
